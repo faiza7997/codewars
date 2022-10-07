@@ -18,4 +18,12 @@ function expressionMatter(a, b, c) {
 
 
 //   new
-// 
+va
+terString = function(value) {
+  
+  }
+// My solution 
+
+var FilterString = function(value) {
+    return parseInt(value.replace(/[^\d]/g, ""))
+  }
