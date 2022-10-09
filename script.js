@@ -33,3 +33,9 @@ var FilterString = function(value) {
 function feast(beast, dish) {
   return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1] ? true : false;
 }
+
+
+// third
+function isLeapYear(duration, year) {
+  return duration * year % 1 === 0;
+}
