@@ -38,3 +38,19 @@ function isLeapYear(duration, year) {
 // fifth
 const solution = (start, finish, difference = finish - start) =>
   Math.floor(difference / 3) + difference % 3
+
+
+// sixth
+
+function uniqueInOrder(it) {
+  var result = []
+  var last
+  
+  for (var i = 0; i < it.length; i++) {
+    if (it[i] !== last) {
+      result.push(last = it[i])
+    }
+  }
+  
+  return result
+}
