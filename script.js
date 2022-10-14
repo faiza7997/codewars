@@ -79,3 +79,9 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
   }
   return pontoonDistance/youSpeed < sharkDistance/sharkSpeed ? "Alive!" : "Shark Bait!";
 }
+
+// nine 
+
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
