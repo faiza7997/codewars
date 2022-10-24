@@ -168,3 +168,10 @@ reverse = function(array) {
   }
   return newArr;
   }
+
+  // Seventeen
+
+  function duckDuckGoose(players, goose) {
+  
+    return players[(goose-1)%players.length].name
+  }
