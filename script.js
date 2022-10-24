@@ -175,3 +175,9 @@ reverse = function(array) {
   
     return players[(goose-1)%players.length].name
   }
+
+  // eighteen
+
+  function first(arr, n=1) {
+    return arr.slice(0,n);
+ }
