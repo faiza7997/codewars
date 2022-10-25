@@ -181,3 +181,7 @@ reverse = function(array) {
   function first(arr, n=1) {
     return arr.slice(0,n);
  }
+
+//  nineteen
+
+const oddCount = n => Math.floor(n/2) ;
