@@ -185,3 +185,9 @@ reverse = function(array) {
 //  nineteen
 
 const oddCount = n => Math.floor(n/2) ;
+
+// twenty
+
+function _if(bool, func1, func2) {
+  return bool ? func1() : func2();
+}
