@@ -191,3 +191,9 @@ const oddCount = n => Math.floor(n/2) ;
 function _if(bool, func1, func2) {
   return bool ? func1() : func2();
 }
+
+//  twenty one 
+
+function nthSmallest(arr, pos){
+  return arr.sort((a,b)=>a-b)[pos-1]
+}
