@@ -206,3 +206,9 @@ reverse = function(array) {
   }
   return newArr;
   }
+
+  // 
+
+  reverse = function(array) {
+    return array.reduceRight(function(a, v){ return a.push(v), a }, []);
+  }
