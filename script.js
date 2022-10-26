@@ -197,3 +197,12 @@ function _if(bool, func1, func2) {
 function nthSmallest(arr, pos){
   return arr.sort((a,b)=>a-b)[pos-1]
 }
+// 
+
+reverse = function(array) {
+  var newArr = [];
+  for (var i = array.length-1; i>=0; i--){
+    newArr.push(array[i]);
+  }
+  return newArr;
+  }
