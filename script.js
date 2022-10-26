@@ -212,3 +212,8 @@ reverse = function(array) {
   reverse = function(array) {
     return array.reduceRight(function(a, v){ return a.push(v), a }, []);
   }
+  function reverse(array) {
+    return array.reduce(function(a, b) {
+      return [b].concat(a)
+    }, []);
+  }
