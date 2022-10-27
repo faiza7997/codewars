@@ -226,3 +226,7 @@ reverse = function(array) {
     }
     return ret;
   }
+
+  function squares(x, n) {
+    return Array.from({length: n}, (v, k) => Math.pow(x, Math.pow(2, k)))
+  }
