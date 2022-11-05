@@ -230,3 +230,8 @@ reverse = function(array) {
   function squares(x, n) {
     return Array.from({length: n}, (v, k) => Math.pow(x, Math.pow(2, k)))
   }
+
+
+  const isPalindrome = (x) => {
+    return x.split("").reverse().join("").toLowerCase() === x.toLowerCase() ? true : false
+  }
