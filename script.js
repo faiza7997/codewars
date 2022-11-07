@@ -237,3 +237,8 @@ reverse = function(array) {
   // }
 
   const isPalindrome = x => x.toLowerCase().split('').reverse().join('') == x.toLowerCase();
+
+
+  const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    return distanceToPump/mpg <= fuelLeft
+  };
