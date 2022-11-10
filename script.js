@@ -262,3 +262,9 @@
     return sumStr.toNumber(a + b);
   } 
    console.log(sumStr("4","5"));
+
+
+   function gooseFilter (birds) {
+    var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+    return birds.filter(b => !geese.includes(b));
+  };
