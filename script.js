@@ -278,3 +278,7 @@
   function sayHello(name) {
     return `Hello, ${name}`
   }
+
+  function sayHello(name) {      //Added an actual name to the function
+    return 'Hello, ' + name;     //Added '+' operator to combine strings
+  }
