@@ -268,3 +268,5 @@
     var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
     return birds.filter(b => !geese.includes(b));
   };
+
+  const sayHello = name => `Hello, ${name}`;
