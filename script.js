@@ -287,3 +287,6 @@
   function toCsvText(array) {
     return array.join('\n');
  }
+
+
+ const toCsvText = array => array.join('\n');
