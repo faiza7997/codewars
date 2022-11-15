@@ -282,3 +282,8 @@
   function sayHello(name) {      //Added an actual name to the function
     return 'Hello, ' + name;     //Added '+' operator to combine strings
   }
+
+
+  function toCsvText(array) {
+    return array.join('\n');
+ }
