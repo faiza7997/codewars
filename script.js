@@ -302,3 +302,21 @@
 function toCsvText(arr) {
   return arr.join("\n");
 }
+
+function toCsvText(array) {
+  let list = '';
+  let k;
+  let n = array.length;
+  
+    for(let arr of array){
+      k = arr.length;
+      for(let a of arr){
+        list += a;
+        k--;
+        if(k > 0) list += ',';
+      }
+      n--;
+      if (n > 0) list+= '\n';
+    }
+    return list;
+  }
