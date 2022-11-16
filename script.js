@@ -293,3 +293,8 @@
 
  
  const toCsvText = array => array.map(row => row.join(',')).join('\n');
+
+
+ function toCsvText(array) {
+  return array.map(list => list.join(',')).join('\n')
+}
