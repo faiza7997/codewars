@@ -298,3 +298,7 @@
  function toCsvText(array) {
   return array.map(list => list.join(',')).join('\n')
 }
+
+function toCsvText(arr) {
+  return arr.join("\n");
+}
