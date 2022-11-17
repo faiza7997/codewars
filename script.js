@@ -325,3 +325,11 @@ function toCsvText(array) {
   function toCsvText(array) {
     return array.map(el => el.join(',')).join('\n');
  }
+
+ function toCsvText(array) {
+  let res = '';
+  for (let i in array) {
+    res += array[i] + '\n';
+  }
+  return res.trim();
+ } 
