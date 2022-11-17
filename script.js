@@ -320,3 +320,8 @@ function toCsvText(array) {
     }
     return list;
   }
+
+
+  function toCsvText(array) {
+    return array.map(el => el.join(',')).join('\n');
+ }
