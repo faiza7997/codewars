@@ -333,3 +333,5 @@ function toCsvText(array) {
   }
   return res.trim();
  } 
+
+ var toCsvText = ( _ ) =>  _.join('\n')
