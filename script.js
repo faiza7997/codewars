@@ -337,3 +337,5 @@ function toCsvText(array) {
  var toCsvText = ( _ ) =>  _.join('\n')
 
  let toCsvText = a => a.join`\n`
+
+ toCsvText=a=>a.join('\n')
