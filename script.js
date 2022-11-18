@@ -341,4 +341,13 @@ function toCsvText(array) {
  toCsvText=a=>a.join('\n')
 
 
- const toCsvText = a => a.map(a => a.join`,`).join`\n`;
+ const toCsvText = a => a.map(a => a.join`,`).join`\n`
+
+
+ function toCsvText(array) {
+  let res = [];
+  for (let i of array) {
+    res += i + '\n';
+  }
+  return res.trim();
+ } 
