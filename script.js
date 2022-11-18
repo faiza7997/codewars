@@ -351,3 +351,13 @@ function toCsvText(array) {
   }
   return res.trim();
  } 
+
+ function toCsvText(array) {
+  let res = [];
+ let i = 0;
+ while (i < array.length) {
+   res += array[i] + '\n';
+   i++;
+ }
+ return res.trim();
+}
