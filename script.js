@@ -390,3 +390,14 @@ function nextNumb(val) {
   }
   return num;
 }
+
+
+function nextNumb(n) { 
+  n+=3-n%3;
+  n+=n&1?0:3;
+  for(;n<9999999999;n+=6){
+      let s = ''+n;
+      if(new Set([...s]).size==s.length) return n;
+  }
+  return "There is no possible number that fulfills those requirements";
+}
