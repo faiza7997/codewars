@@ -373,3 +373,20 @@ function nextNumb(val) {
   }
   return 'There is no possible number that fulfills those requirements';
 }
+
+
+function nextNumb(val) {
+  if (val >= 9999999999) return "There is no possible number that fulfills those requirements";
+  let num = val;
+  let arrayOfDigits = `${num}`.split("");
+  let checkUnique = [...new Set(arrayOfDigits)];
+  for (let i = val; i < val * 1.5; i++) {
+      num = num + 1;
+      arrayOfDigits = `${num}`.split("");
+      checkUnique = [...new Set(arrayOfDigits)];
+      if (Number.isInteger(num / 3) && !Number.isInteger(num / 2) && checkUnique.length === arrayOfDigits.length) {
+          break;
+      }
+  }
+  return num;
+}
