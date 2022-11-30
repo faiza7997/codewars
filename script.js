@@ -422,3 +422,8 @@ function barTriang(p1, p2, p3){
   
   return [+x.toFixed(4), +y.toFixed(4)];
 }
+
+
+
+const min = (list) => Math.min(...list);
+const max = (list) => Math.max(...list);
