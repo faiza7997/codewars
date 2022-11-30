@@ -438,3 +438,12 @@ var max = function(list){
   list.sort((a, b) => (b - a));
   return list[0];
 }
+
+
+var min = function(list){
+  return Math.min.apply(null,list);
+}
+
+var max = function(list){
+  return Math.max.apply(null,list);
+}
