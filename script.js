@@ -501,9 +501,20 @@
 // }
 
 
-
-
 // function invert(array) {
 //   return array.map( (array) =>- + array  ) 
 // }
 //  console.log(invert( [1,2,3,4,5]));
+
+
+// function saleHotdogs(n){
+//   if(n < 5){
+//     return n * "100"
+// } else if ( n < 10){
+//   return n * "95"
+// }else if (n >= 10){
+//   return n * "90"
+// }
+// }
+
+// console.log(saleHotdogs(9));
