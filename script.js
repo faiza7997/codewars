@@ -258,195 +258,244 @@
   // }
 
 
-  function sumStr(a,b) {
-    return sumStr.toNumber(a + b);
-  } 
-   console.log(sumStr("4","5"));
+//   function sumStr(a,b) {
+//     return sumStr.toNumber(a + b);
+//   } 
+//    console.log(sumStr("4","5"));
 
 
-   function gooseFilter (birds) {
-    var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
-    return birds.filter(b => !geese.includes(b));
-  };
+//    function gooseFilter (birds) {
+//     var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+//     return birds.filter(b => !geese.includes(b));
+//   };
 
-  const sayHello = name => `Hello, ${name}`;
+//   const sayHello = name => `Hello, ${name}`;
 
-  function sayHello (name) {
-    return 'Hello, ' +  name;
-  }
+//   function sayHello (name) {
+//     return 'Hello, ' +  name;
+//   }
 
-  function sayHello(name) {
-    return `Hello, ${name}`
-  }
+//   function sayHello(name) {
+//     return `Hello, ${name}`
+//   }
 
-  function sayHello(name) {      //Added an actual name to the function
-    return 'Hello, ' + name;     //Added '+' operator to combine strings
-  }
-
-
-  function toCsvText(array) {
-    return array.join('\n');
- }
+//   function sayHello(name) {      //Added an actual name to the function
+//     return 'Hello, ' + name;     //Added '+' operator to combine strings
+//   }
 
 
- const toCsvText = array => array.join('\n');
+//   function toCsvText(array) {
+//     return array.join('\n');
+//  }
+
+
+//  const toCsvText = array => array.join('\n');
 
  
- const toCsvText = array => array.map(row => row.join(',')).join('\n');
+//  const toCsvText = array => array.map(row => row.join(',')).join('\n');
 
 
- function toCsvText(array) {
-  return array.map(list => list.join(',')).join('\n')
-}
+//  function toCsvText(array) {
+//   return array.map(list => list.join(',')).join('\n')
+// }
 
-function toCsvText(arr) {
-  return arr.join("\n");
-}
+// function toCsvText(arr) {
+//   return arr.join("\n");
+// }
 
-function toCsvText(array) {
-  let list = '';
-  let k;
-  let n = array.length;
+// function toCsvText(array) {
+//   let list = '';
+//   let k;
+//   let n = array.length;
   
-    for(let arr of array){
-      k = arr.length;
-      for(let a of arr){
-        list += a;
-        k--;
-        if(k > 0) list += ',';
-      }
-      n--;
-      if (n > 0) list+= '\n';
-    }
-    return list;
-  }
+//     for(let arr of array){
+//       k = arr.length;
+//       for(let a of arr){
+//         list += a;
+//         k--;
+//         if(k > 0) list += ',';
+//       }
+//       n--;
+//       if (n > 0) list+= '\n';
+//     }
+//     return list;
+//   }
 
 
-  function toCsvText(array) {
-    return array.map(el => el.join(',')).join('\n');
- }
+//   function toCsvText(array) {
+//     return array.map(el => el.join(',')).join('\n');
+//  }
 
- function toCsvText(array) {
-  let res = '';
-  for (let i in array) {
-    res += array[i] + '\n';
-  }
-  return res.trim();
- } 
+//  function toCsvText(array) {
+//   let res = '';
+//   for (let i in array) {
+//     res += array[i] + '\n';
+//   }
+//   return res.trim();
+//  } 
 
- var toCsvText = ( _ ) =>  _.join('\n')
+//  var toCsvText = ( _ ) =>  _.join('\n')
 
- let toCsvText = a => a.join`\n`
+//  let toCsvText = a => a.join`\n`
 
- toCsvText=a=>a.join('\n')
-
-
- const toCsvText = a => a.map(a => a.join`,`).join`\n`
+//  toCsvText=a=>a.join('\n')
 
 
- function toCsvText(array) {
-  let res = [];
-  for (let i of array) {
-    res += i + '\n';
-  }
-  return res.trim();
- } 
-
- function toCsvText(array) {
-  let res = [];
- let i = 0;
- while (i < array.length) {
-   res += array[i] + '\n';
-   i++;
- }
- return res.trim();
-}
+//  const toCsvText = a => a.map(a => a.join`,`).join`\n`
 
 
+//  function toCsvText(array) {
+//   let res = [];
+//   for (let i of array) {
+//     res += i + '\n';
+//   }
+//   return res.trim();
+//  } 
 
-function nextNumb(val) { 
-  while (val < 9876543210) {
-    val++;
-    if(val%2 && !(val%3) && val.toString().match(/^(?!.*(.).*\1)\d{1,10}$/)) {
-      return val;
-    }
-  }
-  return 'There is no possible number that fulfills those requirements';
-}
-
-
-function nextNumb(val) {
-  if (val >= 9999999999) return "There is no possible number that fulfills those requirements";
-  let num = val;
-  let arrayOfDigits = `${num}`.split("");
-  let checkUnique = [...new Set(arrayOfDigits)];
-  for (let i = val; i < val * 1.5; i++) {
-      num = num + 1;
-      arrayOfDigits = `${num}`.split("");
-      checkUnique = [...new Set(arrayOfDigits)];
-      if (Number.isInteger(num / 3) && !Number.isInteger(num / 2) && checkUnique.length === arrayOfDigits.length) {
-          break;
-      }
-  }
-  return num;
-}
+//  function toCsvText(array) {
+//   let res = [];
+//  let i = 0;
+//  while (i < array.length) {
+//    res += array[i] + '\n';
+//    i++;
+//  }
+//  return res.trim();
+// }
 
 
-function nextNumb(n) { 
-  n+=3-n%3;
-  n+=n&1?0:3;
-  for(;n<9999999999;n+=6){
-      let s = ''+n;
-      if(new Set([...s]).size==s.length) return n;
-  }
-  return "There is no possible number that fulfills those requirements";
-}
 
-function barTriang(p1, p2, p3){
-  return [+((p1[0]+p2[0]+p3[0])/3).toFixed(4),
-          +((p1[1]+p2[1]+p3[1])/3).toFixed(4)];
-}
+// function nextNumb(val) { 
+//   while (val < 9876543210) {
+//     val++;
+//     if(val%2 && !(val%3) && val.toString().match(/^(?!.*(.).*\1)\d{1,10}$/)) {
+//       return val;
+//     }
+//   }
+//   return 'There is no possible number that fulfills those requirements';
+// }
 
-function barTriang(p1, p2, p3){
+
+// function nextNumb(val) {
+//   if (val >= 9999999999) return "There is no possible number that fulfills those requirements";
+//   let num = val;
+//   let arrayOfDigits = `${num}`.split("");
+//   let checkUnique = [...new Set(arrayOfDigits)];
+//   for (let i = val; i < val * 1.5; i++) {
+//       num = num + 1;
+//       arrayOfDigits = `${num}`.split("");
+//       checkUnique = [...new Set(arrayOfDigits)];
+//       if (Number.isInteger(num / 3) && !Number.isInteger(num / 2) && checkUnique.length === arrayOfDigits.length) {
+//           break;
+//       }
+//   }
+//   return num;
+// }
+
+
+// function nextNumb(n) { 
+//   n+=3-n%3;
+//   n+=n&1?0:3;
+//   for(;n<9999999999;n+=6){
+//       let s = ''+n;
+//       if(new Set([...s]).size==s.length) return n;
+//   }
+//   return "There is no possible number that fulfills those requirements";
+// }
+
+// function barTriang(p1, p2, p3){
+//   return [+((p1[0]+p2[0]+p3[0])/3).toFixed(4),
+//           +((p1[1]+p2[1]+p3[1])/3).toFixed(4)];
+// }
+
+// function barTriang(p1, p2, p3){
   
-  var x = parseFloat(parseFloat((p1[0] + p2[0] + p3[0]) / 3).toFixed(4));
-  var y = parseFloat(parseFloat((p1[1] + p2[1] + p3[1]) / 3).toFixed(4));
+//   var x = parseFloat(parseFloat((p1[0] + p2[0] + p3[0]) / 3).toFixed(4));
+//   var y = parseFloat(parseFloat((p1[1] + p2[1] + p3[1]) / 3).toFixed(4));
   
-  return [x, y];
-}
+//   return [x, y];
+// }
 
 
-function barTriang(p1, p2, p3){
-  let x = (p1[0] + p2[0] + p3[0]) / 3;
-  let y = (p1[1] + p2[1] + p3[1]) / 3;
+// function barTriang(p1, p2, p3){
+//   let x = (p1[0] + p2[0] + p3[0]) / 3;
+//   let y = (p1[1] + p2[1] + p3[1]) / 3;
   
-  return [+x.toFixed(4), +y.toFixed(4)];
+//   return [+x.toFixed(4), +y.toFixed(4)];
+// }
+
+
+
+// const min = (list) => Math.min(...list);
+// const max = (list) => Math.max(...list);
+
+
+// var min = function(list){
+//   list.sort((a, b) => (a - b));
+//   return list[0];
+// }
+
+// var max = function(list){
+//   list.sort((a, b) => (b - a));
+//   return list[0];
+// }
+
+
+// var min = function(list){
+//   return Math.min.apply(null,list);
+// }
+
+// var max = function(list){
+//   return Math.max.apply(null,list);
+// }
+
+
+// const makeUpperCase = str => str.toUpperCase();
+
+
+
+// function past(h, m, s){
+//   let a = h*3600000
+//   let b = m*60000
+//   let c = s*1000
+
+//   return  ( a+b+c)
+// }
+
+// console.log(past(1,1,1));
+
+
+
+// const arr = [1,1,1,1,1,1,1,2];
+// const average = arr.reduce((a, b) => a + b, 0) / arr.length;
+// console.log(average);
+
+// console.log( Number(false)     );
+
+// const myGirls = ["Cecilie", "Lone"];
+// const myBoys = ["Emil", "Tobias", "Linus"];
+
+// const myChildren = myGirls.concat(myBoys);
+// console.log(myChildren);
+
+// const array1 = [1, 2, 3, 4];
+
+
+// const vol = array1.reduce(
+//   (a, b) => a + b,
+
+// );
+
+// console.log(vol);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const foo = fruits.entries();
+
+
+// console.log(foo);
+
+function helloWorld(){
+  var str = "Hello World!"
+  
+console.log(str)
 }
-
-
-
-const min = (list) => Math.min(...list);
-const max = (list) => Math.max(...list);
-
-
-var min = function(list){
-  list.sort((a, b) => (a - b));
-  return list[0];
-}
-
-var max = function(list){
-  list.sort((a, b) => (b - a));
-  return list[0];
-}
-
-
-var min = function(list){
-  return Math.min.apply(null,list);
-}
-
-var max = function(list){
-  return Math.max.apply(null,list);
-}
-
-
-const makeUpperCase = str => str.toUpperCase();
