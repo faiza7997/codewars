@@ -494,8 +494,16 @@
 
 // console.log(foo);
 
-function helloWorld(){
-  var str = "Hello World!"
+// function helloWorld(){
+//   var str = "Hello World!"
   
-console.log(str)
-}
+// console.log(str)
+// }
+
+
+
+
+// function invert(array) {
+//   return array.map( (array) =>- + array  ) 
+// }
+//  console.log(invert( [1,2,3,4,5]));
