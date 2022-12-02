@@ -560,3 +560,14 @@ function none(arr, fun){
 }
 
 const none = (arr, fun) => !arr.some(fun);
+
+
+function none(arr, fun){
+  for (var i = 0; i < arr.length; i++) {
+    if (fun(arr[i]) == true) {
+      return false;
+    }
+  }
+  
+  return true;
+}
