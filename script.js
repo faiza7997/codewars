@@ -553,3 +553,8 @@ console.log(Arithmetics.add(100, 100));
 console.log(Arithmetics.subtract(100, 7));
 console.log(Arithmetics.multiply(5, 5));
 console.log(Arithmetics.division(100, 5));
+
+
+function none(arr, fun){
+  return !arr.some(fun);
+}
