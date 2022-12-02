@@ -558,3 +558,5 @@ console.log(Arithmetics.division(100, 5));
 function none(arr, fun){
   return !arr.some(fun);
 }
+
+const none = (arr, fun) => !arr.some(fun);
