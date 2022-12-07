@@ -532,42 +532,118 @@
 
 
 
-const Arithmetics = {
-    add:(a, b) => {
-        return `${a} + ${b} = ${a+b}`;
-    },
-    subtract:(a, b) => {
-        return `${a} - ${b} = ${a-b}`
-    },
-    multiply:(a, b) => {
-        return `${a} * ${b} = ${a*b}`
-    },
-    division:(a, b) => {
-        if(b!=0) return `${a} / ${b} = ${a/b}`;
-        return `Cannot Divide by Zero!!!`;
-    }
+// const Arithmetics = {
+//     add:(a, b) => {
+//         return `${a} + ${b} = ${a+b}`;
+//     },
+//     subtract:(a, b) => {
+//         return `${a} - ${b} = ${a-b}`
+//     },
+//     multiply:(a, b) => {
+//         return `${a} * ${b} = ${a*b}`
+//     },
+//     division:(a, b) => {
+//         if(b!=0) return `${a} / ${b} = ${a/b}`;
+//         return `Cannot Divide by Zero!!!`;
+//     }
  
-}
+// }
  
-console.log(Arithmetics.add(100, 100));
-console.log(Arithmetics.subtract(100, 7));
-console.log(Arithmetics.multiply(5, 5));
-console.log(Arithmetics.division(100, 5));
+// console.log(Arithmetics.add(100, 100));
+// console.log(Arithmetics.subtract(100, 7));
+// console.log(Arithmetics.multiply(5, 5));
+// console.log(Arithmetics.division(100, 5));
 
 
-function none(arr, fun){
-  return !arr.some(fun);
-}
+// function none(arr, fun){
+//   return !arr.some(fun);
+// }
 
-const none = (arr, fun) => !arr.some(fun);
+// const none = (arr, fun) => !arr.some(fun);
 
 
-function none(arr, fun){
-  for (var i = 0; i < arr.length; i++) {
-    if (fun(arr[i]) == true) {
-      return false;
-    }
-  }
+// function none(arr, fun){
+//   for (var i = 0; i < arr.length; i++) {
+//     if (fun(arr[i]) == true) {
+//       return false;
+//     }
+//   }
   
-  return true;
+//   return true;
+// }
+
+
+// function mystery() {
+  
+//   var res = {sanity: 'Hello'}
+//   return(
+//      res 
+//   )
+// }
+// console.log(mystery());
+// function bmi(w, h) {
+//   if (w / Math.pow(h, 2) <= 18.5) {
+//     return  "Underweight"
+//   }if (w / Math.pow(h, 2) <= 25.0){
+//     return "Normal"
+//   } if (w / Math.pow(h, 2) <= 30.0) {
+//     return  "Overweight"
+//   }  if (w / Math.pow(h, 2) > 30) {
+//     return  "Obese"
+//   }
+// }
+
+// console.log(bmi(80, 1.80));
+
+// kata
+
+// function first(arr, n=1) {
+//   return arr.slice(0,n);
+// }
+
+  
+// FIRST 
+// function howManyLightsabersDoYouOwn(name) {
+//   if ( name == 'Zach'){
+//     return 18
+//   }else{
+//   return 0
+//   }
+// } 
+
+// console.log(howManyLightsabersDoYouOwn('Zach'));
+
+
+// SECOND 
+// const min = (list) => Math.min(...list);
+// const max = (list) => Math.max(...list);
+
+
+// ---------
+// function findMultiples(int,limit){
+//   let result = []
+  
+//   for (let i = int; i<=limit ; i+=int)
+//     result.push(i)
+    
+//   return result
+// }
+
+// var Ball = function(ballType) {
+//   this.ballType = ballType || 'regular';
+// };
+
+// --------- 
+
+//THIRD 
+
+function century(year) {
+  if ( year.slice(1,2) < 5 ){
+    return Math.floor(year)
+  } else{
+
+    return year[0] + year[1] ;
+  }
 }
+
+console.log(century(1500));
