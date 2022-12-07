@@ -619,6 +619,21 @@
 // const max = (list) => Math.max(...list);
 
 
+// ---------
+// function findMultiples(int,limit){
+//   let result = []
+  
+//   for (let i = int; i<=limit ; i+=int)
+//     result.push(i)
+    
+//   return result
+// }
+
+// var Ball = function(ballType) {
+//   this.ballType = ballType || 'regular';
+// };
+
+// --------- 
 
 //THIRD 
 
