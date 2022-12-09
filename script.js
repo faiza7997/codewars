@@ -637,13 +637,3 @@
 
 //THIRD 
 
-function century(year) {
-  if ( year.slice(1,2) < 5 ){
-    return Math.floor(year)
-  } else{
-
-    return year[0] + year[1] ;
-  }
-}
-
-console.log(century(1500));
