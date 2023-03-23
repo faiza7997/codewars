@@ -669,3 +669,10 @@
 
 
 // const nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2);
+
+// function toCamelCase(str){
+//   var regExp=/[-_]\w/ig;
+//   return str.replace(regExp,function(match){
+//         return match.charAt(1).toUpperCase();
+//    });
+// }
