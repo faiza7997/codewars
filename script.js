@@ -637,32 +637,35 @@
 
 //THIRD 
 
-function century(year) {
-  if ( year.slice(1,2) < 5 ){
-    return Math.floor(year)
-  } else{
+// function century(year) {
+//   if ( year.slice(1,2) < 5 ){
+//     return Math.floor(year)
+//   } else{
 
-    return year[0] + year[1] ;
-  }
-}
+//     return year[0] + year[1] ;
+//   }
+// }
 
-console.log(century(1500));
-
-
-function enough(cap, on, wait) {
-  return Math.max(wait + on - cap, 0);
-}
+// console.log(century(1500));
 
 
-function enough(cap, on, wait) {
-  return (on+wait > cap) ? on+wait-cap : 0;
-}
+// function enough(cap, on, wait) {
+//   return Math.max(wait + on - cap, 0);
+// }
 
 
-function enough(cap, on, wait) {
-  if (on + wait < cap){
-  return 0;
-  } else {
-  return (on + wait) - cap;
-  }
-}
+// function enough(cap, on, wait) {
+//   return (on+wait > cap) ? on+wait-cap : 0;
+// }
+
+
+// function enough(cap, on, wait) {
+//   if (on + wait < cap){
+//   return 0;
+//   } else {
+//   return (on + wait) - cap;
+//   }
+// }
+
+
+// const nearestSq = n => Math.pow(Math.round(Math.sqrt(n)), 2);
